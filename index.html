@@ -71,38 +71,40 @@
         </div>
       </section>
       <section class="section column">
-        <div class="container pros" <div class="details">
-          <h2 class="visually-hidden">Преимущества нашей компании</h2>
-          <ul class="list">
-            <li class="list-item pros">
-              <h3 class="feature">Внимание к деталям</h3>
-              <p class="ftr-text">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="list-item pros">
-              <h3 class="feature">Пунктуальность</h3>
-              <p class="ftr-text">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="list-item pros">
-              <h3 class="feature">Планирование</h3>
-              <p class="ftr-text">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="list-item pros">
-              <h3 class="feature">Современные технологии</h3>
-              <p class="ftr-text">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
+        <div class="container pros">
+          <div class="details">
+            <h2 class="visually-hidden">Преимущества нашей компании</h2>
+            <ul class="list">
+              <li class="list-item pros">
+                <h3 class="feature">Внимание к деталям</h3>
+                <p class="ftr-text">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </li>
+              <li class="list-item pros">
+                <h3 class="feature">Пунктуальность</h3>
+                <p class="ftr-text">
+                  Задача организации, в особенности же рамки и место обучения
+                  кадров влечет за собой.
+                </p>
+              </li>
+              <li class="list-item pros">
+                <h3 class="feature">Планирование</h3>
+                <p class="ftr-text">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+              <li class="list-item pros">
+                <h3 class="feature">Современные технологии</h3>
+                <p class="ftr-text">
+                  Значимость этих проблем настолько очевидна, что реализация
+                  плановых заданий.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="section services">
@@ -436,29 +438,46 @@
           </svg>
         </button>
         <h3>Оставьте свои данные, мы вам перезвоним</h3>
-        <form name="signup_form" autocomplete="on" class="form">
-          <label class="label" for="user_name">Имя</label>
+        <form action="# " name="signup_form" autocomplete="on" class="form">
+          <label class="label" for="user-name">Имя</label>
           <div class="inputs">
-            <input class="input-modal" type="name" name="name" id="user_name" />
+            <input
+              class="input-modal"
+              type="text"
+              name="name"
+              id="user-name"
+              minlength="2"
+              required=""
+            />
             <svg class="input-icon" width="12" height="12">
               <use href="./symbol-defs.svg#name"></use>
             </svg>
           </div>
           <label class="label" for="user_tel">Телефон</label>
           <div class="inputs">
-            <input class="input-modal" type="tel" name="tel" id="user_tel" />
+            <input
+              class="input-modal"
+              type="tel"
+              name="user-phone"
+              id="user_tel"
+            />
             <svg class="input-icon" width="13" height="13">
               <use href="./symbol-defs.svg#telephone"></use>
             </svg>
           </div>
           <label class="label" for="e-mail">Почта</label>
           <div class="inputs">
-            <input class="input-modal" type="mail" name="email" id="e-mail" />
+            <input
+              class="input-modal"
+              type="email"
+              name="user-email"
+              id="e-mail"
+            />
             <svg class="input-icon" width="15" height="12">
               <use href="./symbol-defs.svg#mail"></use>
             </svg>
           </div>
-          <label class="label" for=""> Комментарий</label>
+          <label class="label"> Комментарий</label>
           <div class="inputs last">
             <textarea
               class="textarea"

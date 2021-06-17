@@ -660,6 +660,7 @@ a.links.nav.current::after {
   pointer-events: none;
 }
 .modal {
+  padding: 40px;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -685,10 +686,12 @@ a.links.nav.current::after {
   height: 30px;
   background-color: #fff;
 }
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
   border: 1px solid var(--accent-cl);
 }
-.modal-close:hover .modal-icon {
+.modal-close:hover .modal-icon,
+.modal-close:focus .modal-icon {
   fill: var(--accent-cl);
 }
 .links:hover .card-backdrop {
@@ -755,7 +758,7 @@ a.links.nav.current::after {
   margin-bottom: 0px;
 }
 .modal > h3 {
-  margin: 40px 40px 12px 30px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -780,9 +783,6 @@ a.links.nav.current::after {
 .modal .sign-up {
   margin-left: auto;
   margin-right: auto;
-}
-.form {
-  margin: 0 40px 40px 40px;
 }
 .textarea {
   width: 448px;
@@ -852,14 +852,19 @@ a.links.nav.current::after {
   width: 16px;
   height: 15px;
 }
+.checkbox:focus + .custom-checkbox {
+  background-color: var(--accent-cl);
+  background-image: url("../checkbox.svg");
+  background-size: co ntain;
+  border: none;
+  width: 16px;
+  height: 15px;
+}
 .policy {
   margin: 20px 0 30px 0;
 }
 .checkbox-label {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  margin-left: 14px;
+  justify-content: center;
 }
 .policy-text {
   font-family: var(--main-font);
